@@ -40,6 +40,9 @@ public class ProductController {
             currentProduct.setPriceProduct(productToChange.getPriceProduct());
             currentProduct.setStockProduct(productToChange.getStockProduct());
             currentProduct.setUrlImage(productToChange.getUrlImage());
+            currentProduct.setCategoryProduct(productToChange.getCategoryProduct());
+            currentProduct.setDistributorProduct(productToChange.getDistributorProduct());
+            currentProduct.setLinkDistributor(productToChange.getLinkDistributor());
 
             productService.saveProduct(currentProduct);
         }
